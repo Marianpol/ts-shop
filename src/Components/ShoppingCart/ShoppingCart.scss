@@ -1,0 +1,107 @@
+@import '../../Utilities/variables';
+@import '../../Utilities/global';
+
+.shopping-cart-container {
+    cursor: default;
+    position: relative;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    z-index: 5;
+    box-shadow: 0 0 15px 5px $grey-1;
+    transition: visibility linear 0.25s, opacity 0.25s linear;
+
+    &__review-btn {
+        @extend .base_button;
+        width: 100%;
+        margin: 0.8rem 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .shopping-cart-container {
+        width: 19rem;
+        right: 20rem;
+        
+        &__item {
+            cursor: pointer;
+            display: flex;
+            margin: 0.8rem 0;
+            border-bottom: 1px solid $light-grey-2;
+            
+            &:last-child {
+                border-bottom: 2px solid $grey-1;
+            }
+
+            &__img-box {
+                width: 4rem;
+                height: 4rem;
+                margin-right: 1rem;
+                
+                img {
+                    max-width: 4rem;
+                }
+
+                i {
+                   position: relative;
+                   min-width: 2rem;
+                   top: 2.5rem;
+                   font-size: 0.8rem;
+                   background-color: rgba(160,120,85,0.8);
+                   padding: 0.2rem;
+                   border-radius: 5px;
+                   color: white;
+                   z-index: 11;
+                }
+            }
+
+            &__details {
+                margin-right: 0.5rem;
+                width: 70%;
+
+                &__main {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 1rem 0;
+                }
+
+                &__name {
+                    display: inline-block;
+                    word-wrap: break-word;
+                    overflow: hidden;
+                    text-overflow: ellipsis '.';
+                    line-height: 1.2rem;
+                    height: 2.4rem;
+                }
+
+                &__price {
+                    font-weight: bold;
+                }
+            }
+
+            &__delete-btn {
+                cursor: pointer;
+                position: relative;
+                left: 6px;
+                margin-top: 1rem;
+                padding: 0;
+                height: 2.5rem;
+                font-size: 2.5rem;
+                background-color: white;
+                color: rgb(192, 2, 2);
+                border: none;
+                outline: none;
+                transform: rotate(45deg);
+
+                &:hover {
+                    color: rgb(105, 1, 1); 
+                }
+            }
+        }
+
+        &__total {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

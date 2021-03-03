@@ -1,0 +1,11 @@
+.details_table {
+    border-collapse: collapse;
+    
+    td, th {
+        padding: 0.7rem;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #F2F2F2;
+    }
+}

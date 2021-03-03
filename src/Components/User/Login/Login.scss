@@ -1,0 +1,28 @@
+@import '../../../Utilities/global';
+
+.login-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-wrapper {
+    text-align: center;
+    max-width: 25rem;
+
+    &__button {
+        @extend .base_button;
+        width: 100%;
+        height: 2.5rem;
+        margin-top: 0.3rem;
+        font-size: 12pt;
+    }
+    &__login-status {
+        padding: 0.7rem 0.5rem;
+        font-size: 1rem;
+        font-weight: lighter;
+        letter-spacing: 0.5px;
+        color: #A94442;
+        background-color: #F2DEDE;
+    }
+}
+

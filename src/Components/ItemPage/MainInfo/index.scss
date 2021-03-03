@@ -1,0 +1,50 @@
+@import '../../../Utilities/global';
+
+.wrapper {
+    margin: 0;
+}
+
+.quantity_selector {
+    display: flex;
+    margin-bottom: 1rem;
+
+    &__button {
+        height: inherit;
+        width: 32px;
+        border: 1px solid black;
+        background-repeat: no-repeat;
+    }
+    &__minus {
+        background-image: url("../../../Asstets/minus.svg");
+    }
+
+    &__input {
+        height: 32px;
+        width: 3rem;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    &__plus {
+        background-image: url("../../../Asstets/plus.svg");
+    }
+}
+
+.to_basket_button {
+    @extend .base_button;
+    width: 100%;
+}
+
+.quantity_selector__input::-webkit-inner-spin-button,
+.quantity_selector__input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+@media screen and (min-width:768px) {
+    .wrapper {
+        margin: 0 1rem;
+    }
+}
+

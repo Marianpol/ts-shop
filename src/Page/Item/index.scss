@@ -1,0 +1,15 @@
+.main_info_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+// .details_container {
+//     display: flex;
+//     justify-content: center;
+// }
+
+@media (min-width: 768px) {
+    .main_info_wrapper{
+        flex-direction: row;
+    }
+}

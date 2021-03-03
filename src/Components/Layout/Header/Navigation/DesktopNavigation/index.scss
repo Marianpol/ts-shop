@@ -1,0 +1,20 @@
+@import '../../../../../Utilities/variables';
+
+.navigation {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+
+    &__link{
+        padding-bottom: 0.3rem;
+        white-space: nowrap;
+        text-decoration: none;
+        color: black;
+        border: 2px solid white;
+        transition: 0.2s;
+
+        &:hover {
+            border-bottom: 2px solid $main-color;
+        }
+    }
+}

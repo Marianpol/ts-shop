@@ -1,0 +1,37 @@
+@import '../../../Utilities/global';
+@import '../Login/Login.scss';
+
+.registration-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    &__input {
+        padding: 1rem;
+        margin: 0.5rem 0;
+        border: 1px solid black;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+
+        &:focus {
+            box-shadow: 0px 0px 15px 1px #D3D3D3;
+        }
+    }
+
+    &__button {
+        @extend .base_button;
+        padding: 0.8rem;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
+    }
+
+    &__fail-status {
+       @extend .login-wrapper__login-status;
+       padding: 1rem;
+    }
+}

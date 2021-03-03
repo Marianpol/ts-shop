@@ -1,0 +1,32 @@
+@import '../../../../../../Utilities/variables';
+
+.upper-navigation {
+    margin: 0.5rem 4%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &__basket {
+        cursor: pointer;
+        margin-left: 3em;
+    }
+
+    &__account {
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+    }
+    &__quantity {
+        margin-left: -0.8rem;
+        height: 0.675rem;
+        min-width: 0.675rem;
+        text-align: center;
+        position: absolute;
+        padding: 0.2rem;
+        font-size: 0.7rem;
+        border-radius: 1rem;
+        background-color: $main-color;
+        color: white;
+        box-shadow: 0 0 1px 3px white;
+    }
+}
